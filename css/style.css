@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+html{
+    background-color: #950101;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Patua One', cursive;
+    font-size: 55px;
+    color: #EEEEEE;
+    filter: drop-shadow(2px 2px #DEDEDE);
+    -webkit-text-stroke: 2px black;
+}
+.content{
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pantalla{
+    width: 100%;
+    height: 110%;
+    background-color: #3D0000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.carta{
+    width: 500px;
+    height: 450px;
+    background: white;
+    border: 15px solid #DEDEDE;
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    padding: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    overflow-y: auto;
+}
+.aiku{
+    display: none;
+}
+
+.arlett{
+    display: none;
+}
+
+.caja{
+    width: 150px;
+    padding: 10px;
+    filter: drop-shadow(4px 3px #3D0000);
+}
+
+.caja2{
+    width: 150px;
+    padding: 10px;
+    filter: drop-shadow(4px 3px #3D0000);
+    display: none;
+}

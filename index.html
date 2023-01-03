@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/estachikito.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <title>Esta Familia ☻</title>
+</head>
+<body>
+    <div class="title">Esta Familia</div>
+    <div class="content">
+        <div class="fila-uno">
+            <img class="caja" id="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+        </div>
+        <div class="fila-dos">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+        </div>
+        <div class="fila-tres">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+        </div>
+        <div class="pantalla"></div>
+        <!-- CARTAS. TODAS OCULTAS POR DEFECTO-->
+        <div class="carta aiku">
+            <img src="img/carta_aiku.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="carta arlett">
+            <p>Estoy agradecida por poder pertencer a tu bonita comunidad, sin duda la mejor que conozco. Tengo fé en que este año crecerás muchísimo, solo porfa no te olvides de nosotros:c Seguiré apoyandote lo más que pueda, aunque mis tiktoks no sean lo mejor, intento que más gente te conozca, porque es lo que mereces, tu contenido vale muchisimo la pena. 
+                <br><br>
+            Conocer a la EstaSquad y a ti en persona fué una aventura xd y sin duda un buen recuerdo de año. Gracias por todo tu esfuerzo y contenido, que este año esté lleno de dinero. 🤑</p>
+            <br>
+            <img src="img/arlett.jpg" alt="" style="width: 100%;">
+        </div>
+        <!-- <div class="carta"></div> -->
+    </div>
+    
+</body>
+<script>
+    const jsConfetti = new JSConfetti();
+    function abrir(){
+        jsConfetti.addConfetti({
+            emojis: ["🤨","🤑","🤙🏻","🐸","🥵","😎","🤡","💵","📦"]
+        });
+    
+    }
+    
+    document.querySelector("#caja").addEventListener("click", abrir);
+
+</script>
+</html>
