@@ -25,7 +25,13 @@ html{
     align-items: center;
 }
 .cajas{
-    width: 40%;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .caja{
     width: 150px;
@@ -35,7 +41,7 @@ html{
 }
 .caja:hover {
     width: 165px;
-    filter: drop-shadow(0 0 0.8rem #EEEEEE);
+    filter: drop-shadow(0 0 0.8rem #FF4949);
 }
 .caja2{
     width: 150px;
@@ -43,7 +49,10 @@ html{
     filter: drop-shadow(4px 3px #3D0000);
     display: none;
 }
-
+.caja2:hover {
+    width: 165px;
+    filter: drop-shadow(0 0 0.8rem #FF0000);
+}
 
 .pantalla{
     width: 100%;
@@ -56,7 +65,7 @@ html{
 }
 .carta{
     width: 500px;
-    height: 450px;
+    height: 70vh;
     background: white;
     border: 15px solid #DEDEDE;
     border-radius: 10px;
@@ -68,32 +77,33 @@ html{
     overflow-y: auto;
 }
 
-.aiku{
+.aiku, .arlett, .mari, .nai, .pomsky, .monaart, .kenny, .yumi,.barix{
     display: none;
 }
 
-.arlett{
-    display: none;
-}
-.mari{
-    display: none;
-}
-.nai{
-    display: none;
-}
-.pomsky{
-    display: none;
-}
-.monaart{
-    display: none;
-}
-.kenny{
-    display: none;
-}
-.yumi{
-    display: none;
-}
-.barix{
-    display: none;
+@media screen and (min-width:1728px){
+    .cajas{
+        width: 40%;
+        display: flex;
+    }
 }
 
+@media screen and (min-width:768px) and (max-width:1024px){
+    .cajas{
+        width: 60vw;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .cajas{
+        width: 100%;
+        display: flex;
+    }
+    .carta{
+        width: 300px;
+    }
+    html{
+        overflow-y: auto;
+    }
+}
