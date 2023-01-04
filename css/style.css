@@ -102,6 +102,7 @@ html{
     }
     .carta{
         width: 300px;
+        height: auto;
     }
     html{
         overflow-y: auto;
