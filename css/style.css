@@ -71,7 +71,7 @@ html{
 .carta{
     width: 500px;
     height: 70vh;
-    background: white;
+    background: #EEEEEE;
     border: 15px solid #DEDEDE;
     border-radius: 10px;
     position: absolute;
@@ -92,7 +92,12 @@ html{
         display: flex;
     }
 }
-
+@media screen and (min-width:1360px){
+    .cajas{
+        width: 40%;
+        display: flex;
+    }
+}
 @media screen and (min-width:768px) and (max-width:1024px){
     .cajas{
         width: 60vw;
