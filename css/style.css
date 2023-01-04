@@ -42,6 +42,7 @@ html{
 .caja:hover {
     width: 165px;
     filter: drop-shadow(0 0 0.8rem #FF4949);
+    cursor: pointer;
 }
 .caja2{
     width: 150px;
@@ -52,6 +53,7 @@ html{
 .caja2:hover {
     width: 165px;
     filter: drop-shadow(0 0 0.8rem #FF0000);
+    cursor: pointer;
 }
 
 .pantalla{
@@ -62,6 +64,9 @@ html{
     position: absolute;
     top: 0;
     display: none;
+}
+.pantalla:hover{
+    cursor: zoom-out;
 }
 .carta{
     width: 500px;
