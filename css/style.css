@@ -95,7 +95,7 @@ html{
 }
 @media screen and (min-width:1360px){
     .cajas{
-        width: 40%;
+        width: 30%;
         display: flex;
     }
 }
