@@ -129,10 +129,22 @@
 <script>
     alert("⚠ ATENCION! ⚠ \nLo que está a punto de leer, contiene mucha dislexia\n \nEl regalo es ajeno a cualquier partido político y queda prohibida su difusión o comercialización");
     const jsConfetti = new JSConfetti();
+    document.addEventListener("keyup", function(event){
+        if (event.keyCode === 27){ 
+            document.getElementsByClassName('pantalla')[0].style.display = 'none';
+            document.getElementsByClassName('aiku')[0].style.display = 'none';
+            document.getElementsByClassName('arlett')[0].style.display = 'none';
+            document.getElementsByClassName('mari')[0].style.display = 'none';
+            document.getElementsByClassName('nai')[0].style.display = 'none';
+            document.getElementsByClassName('pomsky')[0].style.display = 'none';
+            document.getElementsByClassName('monaart')[0].style.display = 'none';
+            document.getElementsByClassName('kenny')[0].style.display = 'none';
+            document.getElementsByClassName('yumi')[0].style.display = 'none';
+            document.getElementsByClassName('barix')[0].style.display = 'none';
+            document.getElementsByClassName('meli')[0].style.display = 'none';
+        } else return;
+    });
     
-    function cerrarCarta(e){
-        alert(e.target);
-    }
     function abrir(e){
         jsConfetti.addConfetti({
             emojis: ["🤨","🤑","🤙🏻","🐸","🥵","😎","🤡","💵","📦"]
