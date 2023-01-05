@@ -37,6 +37,8 @@
             <img class="caja2" id="caja28" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
             <img class="caja" id="caja19" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
             <img class="caja2" id="caja29" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
+            <img class="caja" id="caja10" src="img/caja1.png" alt="Ícono caja creado por Steven Edward Simanjuntak - Flaticon">
+            <img class="caja2" id="caja20" src="img/caja2.png" alt="ícono de caja abierta creada por Freepik - Flaticon">
         </div>
             
        
@@ -101,6 +103,7 @@
             <img src="img/carta_yumi.png" alt="" style="width: 100%;">
         </div>
         <div class="carta barix"></div>
+        <div class="carta meli">meli</div>
 
     </div>
     
@@ -225,6 +228,18 @@
                 } else return;
             });
         }
+        if(e.target.id == "caja10" || e.target.id == "caja20"){
+            document.getElementsByClassName('pantalla')[0].style.display = 'inline';
+            document.getElementsByClassName('meli')[0].style.display = 'inline';
+            document.getElementById('caja10').style.display = 'none';
+            document.getElementById('caja20').style.display = 'inline';
+            document.getElementById('pantalla').addEventListener('click',function(e){
+                if (e.target.closest(".pantalla")){
+                    document.getElementsByClassName('pantalla')[0].style.display = 'none';
+                    document.getElementsByClassName('meli')[0].style.display = 'none';
+                } else return;
+            });
+        }
     }
     function audio(e){
         e.preventDefault();
@@ -239,6 +254,7 @@
     document.querySelector("#caja17").addEventListener("click", audio);
     document.querySelector("#caja18").addEventListener("click", audio);
     document.querySelector("#caja19").addEventListener("click", audio);
+    document.querySelector("#caja10").addEventListener("click", audio);
 
     document.querySelector("#caja11").addEventListener("click", abrir);
     document.querySelector("#caja12").addEventListener("click", abrir);
@@ -249,6 +265,7 @@
     document.querySelector("#caja17").addEventListener("click", abrir);
     document.querySelector("#caja18").addEventListener("click", abrir);
     document.querySelector("#caja19").addEventListener("click", abrir);
+    document.querySelector("#caja10").addEventListener("click", abrir);
 
     document.querySelector("#caja21").addEventListener("click", abrir);
     document.querySelector("#caja22").addEventListener("click", abrir);
@@ -259,6 +276,7 @@
     document.querySelector("#caja27").addEventListener("click", abrir);
     document.querySelector("#caja28").addEventListener("click", abrir);
     document.querySelector("#caja29").addEventListener("click", abrir);
+    document.querySelector("#caja20").addEventListener("click", abrir);
     
 </script>
 </html>
