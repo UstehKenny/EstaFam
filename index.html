@@ -188,17 +188,17 @@
             });
         }
         if(e.target.id == "caja14" || e.target.id == "caja24"){
-            alert("Esa caja aún no llega 🫢");
-            // document.getElementsByClassName('pantalla')[0].style.display = 'inline';
-            // document.getElementsByClassName('nai')[0].style.display = 'inline';
-            // document.getElementById('caja14').style.display = 'none';
-            // document.getElementById('caja24').style.display = 'inline';
-            // document.getElementById('pantalla').addEventListener('click',function(e){
-            //     if (e.target.closest(".pantalla")){
-            //         document.getElementsByClassName('pantalla')[0].style.display = 'none';
-            //         document.getElementsByClassName('nai')[0].style.display = 'none';
-            //     } else return;
-            // });
+            
+            document.getElementsByClassName('pantalla')[0].style.display = 'inline';
+            document.getElementsByClassName('nai')[0].style.display = 'inline';
+            document.getElementById('caja14').style.display = 'none';
+            document.getElementById('caja24').style.display = 'inline';
+            document.getElementById('pantalla').addEventListener('click',function(e){
+                if (e.target.closest(".pantalla")){
+                    document.getElementsByClassName('pantalla')[0].style.display = 'none';
+                    document.getElementsByClassName('nai')[0].style.display = 'none';
+                } else return;
+            });
 
         }
         if(e.target.id == "caja15" || e.target.id == "caja25"){
@@ -238,17 +238,16 @@
             });
         }
         if(e.target.id == "caja18" || e.target.id == "caja28"){
-            alert("Esa caja aún no llega 🫢");
-            // document.getElementsByClassName('pantalla')[0].style.display = 'inline';
-            // document.getElementsByClassName('yumi')[0].style.display = 'inline';
-            // document.getElementById('caja18').style.display = 'none';
-            // document.getElementById('caja28').style.display = 'inline';
-            // document.getElementById('pantalla').addEventListener('click',function(e){
-            //     if (e.target.closest(".pantalla")){
-            //         document.getElementsByClassName('pantalla')[0].style.display = 'none';
-            //         document.getElementsByClassName('yumi')[0].style.display = 'none';
-            //     } else return;
-            // });
+            document.getElementsByClassName('pantalla')[0].style.display = 'inline';
+            document.getElementsByClassName('yumi')[0].style.display = 'inline';
+            document.getElementById('caja18').style.display = 'none';
+            document.getElementById('caja28').style.display = 'inline';
+            document.getElementById('pantalla').addEventListener('click',function(e){
+                if (e.target.closest(".pantalla")){
+                    document.getElementsByClassName('pantalla')[0].style.display = 'none';
+                    document.getElementsByClassName('yumi')[0].style.display = 'none';
+                } else return;
+            });
         }
         if(e.target.id == "caja19" || e.target.id == "caja29"){
             document.getElementsByClassName('pantalla')[0].style.display = 'inline';
